@@ -35,6 +35,14 @@ Start the servers. Needs to sudo since it binds to port 80.
 - Unzip.
 - Enjoy.
 
+# Bookmarklet
+
+[DownCloud](javascript:function(){location.href=location.href.replace('soundcloud.com',%20'downcloud.com');}())
+
+# Credits
+
+This would not have been possible without the help I got from Sebastian Ohm and Alexander Simmerl. Thanks guys!
+
 # Questions
 
 hannes at soundcloud.com
