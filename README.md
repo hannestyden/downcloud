@@ -15,6 +15,8 @@ Get the code, and everything in its right place.
     $ cd ~/code
     $ git clone git://github.com/hannestyden/downcloud.git
 
+Register an app on `http://souncloud.com/you/apps`.
+
 Edit line 6 of `downcloud.js` to contain your consumer key.
 
     var consumerKey = 'YOUR_CONSUMER_KEY';
