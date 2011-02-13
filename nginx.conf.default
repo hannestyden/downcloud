@@ -1,0 +1,37 @@
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+daemon off;
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    sendfile        on;
+    keepalive_timeout  65;
+
+    server {
+        listen       80;
+        server_name  localhost, downcloud.com;
+
+        location / {
+          proxy_pass        http://localhost:1234;
+          proxy_set_header  X-Real-IP  $remote_addr;
+        }
+
+        location /api-soundcloud/ {
+          rewrite /api-soundcloud(.*) $1 break;
+          proxy_pass http://ak-media.soundcloud.com;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+
+    }
+
+}
