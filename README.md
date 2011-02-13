@@ -39,7 +39,7 @@ Start the servers. Needs to sudo since it binds to port 80.
 
 Use this bookmarklet (couldn't get the link to work with GitHub README):
 
-    javascript:location.href=location.href.replace\('soundcloud.com','downcloud.com'\);
+    javascript:location.href=location.href.replace('soundcloud.com','downcloud.com');
 
 # Credits
 
