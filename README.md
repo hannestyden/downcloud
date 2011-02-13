@@ -37,7 +37,7 @@ Start the servers. Needs to sudo since it binds to port 80.
 
 # Bookmarklet
 
-<a href="javascript:function(){location.href=location.href.replace('soundcloud.com',%20'downcloud.com');}()">DownCloud</a>
+[DownCloud](javascript:location.href=location.href.replace\('soundcloud.com','downcloud.com'\);)
 
 # Credits
 
